@@ -518,14 +518,14 @@ False</semantic:allowedAnswers>
       <semantic:requiredInput href="#_b4f2f9ed-2f75-453f-99ef-66933b229add"/>
     </semantic:informationRequirement>
     <semantic:decisionTable id="_7eaf8b1f-cd25-40b2-9b68-ee446f75805a" typeRef="Actions_to_Prevent_Preterm_Delivery" hitPolicy="FIRST" preferredOrientation="Rule-as-Row" outputLabel="Determine Actions to Prevent Preterm Delivery">
-      <semantic:input id="_0427de54-33f0-404e-bc7d-33e7fc3254f9">
-        <semantic:inputExpression id="_66425BC7-2F7B-4851-86F2-3582E16D096B" typeRef="boolean">
-          <semantic:text>Determine Presence of Preterm Labor PTL</semantic:text>
-        </semantic:inputExpression>
-      </semantic:input>
       <semantic:input id="_4a6a9314-f0ac-4483-9da2-94d621e45f37">
         <semantic:inputExpression id="_BF0FB95D-CDCA-4728-B935-6D026D8B0BAC" typeRef="boolean">
           <semantic:text>Preterm Delivery History</semantic:text>
+        </semantic:inputExpression>
+      </semantic:input>
+      <semantic:input id="_0427de54-33f0-404e-bc7d-33e7fc3254f9">
+        <semantic:inputExpression id="_66425BC7-2F7B-4851-86F2-3582E16D096B" typeRef="boolean">
+          <semantic:text>Determine Presence of Preterm Labor PTL</semantic:text>
         </semantic:inputExpression>
       </semantic:input>
       <semantic:input id="_98a39de0-3036-4300-bd76-9fdb02f10224">
@@ -561,11 +561,12 @@ False</semantic:allowedAnswers>
         </semantic:defaultOutputEntry>
       </semantic:output>
       <semantic:rule id="_60ea4666-dd85-4bcd-8bc4-1bbde4851793">
-        <semantic:inputEntry id="_0b04698c-c4e0-4611-a9bf-ad32e8513496">
-          <semantic:text>true</semantic:text>
-        </semantic:inputEntry>
+        <semantic:description>Send to hospital</semantic:description>
         <semantic:inputEntry id="_53b0ba0c-6da3-47c0-8e1b-e29a58601ffd">
           <semantic:text>-</semantic:text>
+        </semantic:inputEntry>
+        <semantic:inputEntry id="_0b04698c-c4e0-4611-a9bf-ad32e8513496">
+          <semantic:text>true</semantic:text>
         </semantic:inputEntry>
         <semantic:inputEntry id="_9ddaf1dd-aa90-4c7d-8843-75b2214d8ec2">
           <semantic:text>-</semantic:text>
@@ -581,11 +582,12 @@ False</semantic:allowedAnswers>
         </semantic:outputEntry>
       </semantic:rule>
       <semantic:rule id="_0fe89ac9-3179-4083-9de9-b24cad14cdaf">
-        <semantic:inputEntry id="_d04536a2-23d6-4ddb-81c8-a7a53053e7ff">
-          <semantic:text>-</semantic:text>
-        </semantic:inputEntry>
+        <semantic:description>Progesterone</semantic:description>
         <semantic:inputEntry id="_cd003705-a1a4-4e6e-ad70-3a273ba5221e">
           <semantic:text>true</semantic:text>
+        </semantic:inputEntry>
+        <semantic:inputEntry id="_d04536a2-23d6-4ddb-81c8-a7a53053e7ff">
+          <semantic:text>-</semantic:text>
         </semantic:inputEntry>
         <semantic:inputEntry id="_1ab76a12-6a1a-49d5-81b4-165204300d4d">
           <semantic:text>"Singleton"</semantic:text>
@@ -601,10 +603,11 @@ False</semantic:allowedAnswers>
         </semantic:outputEntry>
       </semantic:rule>
       <semantic:rule id="_cc7cf402-2431-425e-bbdb-0eff154e0343">
-        <semantic:inputEntry id="_85820edc-b9a3-4754-8270-c5600ae82069">
+        <semantic:description>Short Cervix</semantic:description>
+        <semantic:inputEntry id="_614a07d9-d7f6-4889-8ee7-52ae85a67c95">
           <semantic:text>-</semantic:text>
         </semantic:inputEntry>
-        <semantic:inputEntry id="_614a07d9-d7f6-4889-8ee7-52ae85a67c95">
+        <semantic:inputEntry id="_85820edc-b9a3-4754-8270-c5600ae82069">
           <semantic:text>-</semantic:text>
         </semantic:inputEntry>
         <semantic:inputEntry id="_8b292350-cbc7-4e32-81cd-7e316e633492">
@@ -894,7 +897,16 @@ False</semantic:allowedAnswers>
           <drools:ComponentWidths dmnElementRef="_a8955ba2-9211-45eb-8552-31ef2e3d11c7"/>
           <drools:ComponentWidths dmnElementRef="_439fe973-3c9e-479e-b793-f728a2b98fe4"/>
           <drools:ComponentWidths dmnElementRef="_4a126757-48bf-4176-bc02-f38cfc35f268"/>
-          <drools:ComponentWidths dmnElementRef="_7eaf8b1f-cd25-40b2-9b68-ee446f75805a"/>
+          <drools:ComponentWidths dmnElementRef="_7eaf8b1f-cd25-40b2-9b68-ee446f75805a">
+            <drools:width>50.0</drools:width>
+            <drools:width>201.0</drools:width>
+            <drools:width>290.0</drools:width>
+            <drools:width>310.0</drools:width>
+            <drools:width>191.0</drools:width>
+            <drools:width>293.0</drools:width>
+            <drools:width>332.0</drools:width>
+            <drools:width>120.0</drools:width>
+          </drools:ComponentWidths>
           <drools:ComponentWidths dmnElementRef="_1e1bb505-48ab-4192-b52c-6749edd8cb64"/>
           <drools:ComponentWidths dmnElementRef="_4924efc8-e7a2-49f8-952f-b0330e74dae1"/>
           <drools:ComponentWidths dmnElementRef="_bd39e58d-1355-4f66-a663-a95888c04eb7"/>
