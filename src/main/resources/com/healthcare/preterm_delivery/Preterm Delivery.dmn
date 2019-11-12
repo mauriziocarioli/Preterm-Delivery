@@ -322,7 +322,7 @@ Perform Cervical Cerclage</semantic:allowedAnswers>
       </semantic:input>
       <semantic:output id="_4c092605-73ce-4666-b463-7b94654929f5">
         <semantic:outputValues id="_613EF228-B326-4583-852C-F8A3BEEC7CC7">
-          <semantic:text>"Prescribe Vaginal Progesterone","PerformCervical Cerclage"</semantic:text>
+          <semantic:text>"Prescribe Vaginal Progesterone","Perform Cervical Cerclage"</semantic:text>
         </semantic:outputValues>
       </semantic:output>
       <semantic:rule id="_655e69b0-2b22-4d59-9b8f-8d60bda84136">
