@@ -1655,6 +1655,7 @@
               <name>1|45</name>
               <type>EXPECT</type>
             </expressionIdentifier>
+            <rawValue class="string">&quot;Obese&quot;</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
