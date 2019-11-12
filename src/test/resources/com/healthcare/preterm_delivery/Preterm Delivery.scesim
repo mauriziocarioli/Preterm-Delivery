@@ -1,0 +1,1718 @@
+<ScenarioSimulationModel version="1.6">
+  <simulation>
+    <simulationDescriptor>
+      <factMappings>
+        <FactMapping>
+          <expressionElements class="linked-list"/>
+          <expressionIdentifier>
+            <name>Index</name>
+            <type>OTHER</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>#</name>
+            <className>java.lang.Integer</className>
+          </factIdentifier>
+          <className>java.lang.Integer</className>
+          <factAlias>#</factAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list"/>
+          <expressionIdentifier>
+            <name>Description</name>
+            <type>OTHER</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Scenario description</name>
+            <className>java.lang.String</className>
+          </factIdentifier>
+          <className>java.lang.String</className>
+          <factAlias>Scenario description</factAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Exam Data</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Antenatal Exam Number</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|1</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Exam Data</name>
+            <className>Exam Data</className>
+          </factIdentifier>
+          <className>number</className>
+          <factAlias>Exam Data</factAlias>
+          <expressionAlias>Antenatal Exam Number</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Exam Data</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Exam Notes</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|2</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Exam Data</name>
+            <className>Exam Data</className>
+          </factIdentifier>
+          <className>string</className>
+          <factAlias>Exam Data</factAlias>
+          <expressionAlias>Exam Notes</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Exam Data</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Baby</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|3</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Exam Data</name>
+            <className>Exam Data</className>
+          </factIdentifier>
+          <className>java.util.List</className>
+          <factAlias>Exam Data</factAlias>
+          <expressionAlias>Baby</expressionAlias>
+          <genericTypes class="singleton-list">
+            <string>Baby</string>
+          </genericTypes>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Exam Data</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Date of Exam</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|4</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Exam Data</name>
+            <className>Exam Data</className>
+          </factIdentifier>
+          <className>date</className>
+          <factAlias>Exam Data</factAlias>
+          <expressionAlias>Date of Exam</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Exam Data</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Gestational Age</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|5</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Exam Data</name>
+            <className>Exam Data</className>
+          </factIdentifier>
+          <className>Gestational Age</className>
+          <factAlias>Exam Data</factAlias>
+          <expressionAlias>Gestational Age</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Exam Data</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Mother</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Heart Rate</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|6</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Exam Data</name>
+            <className>Exam Data</className>
+          </factIdentifier>
+          <className>number</className>
+          <factAlias>Exam Data</factAlias>
+          <expressionAlias>Mother.Heart Rate</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Exam Data</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Mother</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Edema</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|7</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Exam Data</name>
+            <className>Exam Data</className>
+          </factIdentifier>
+          <className>string</className>
+          <factAlias>Exam Data</factAlias>
+          <expressionAlias>Mother.Edema</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Exam Data</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Mother</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Status Update</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|8</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Exam Data</name>
+            <className>Exam Data</className>
+          </factIdentifier>
+          <className>string</className>
+          <factAlias>Exam Data</factAlias>
+          <expressionAlias>Mother.Status Update</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Exam Data</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Mother</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Pain maternal</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|9</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Exam Data</name>
+            <className>Exam Data</className>
+          </factIdentifier>
+          <className>string</className>
+          <factAlias>Exam Data</factAlias>
+          <expressionAlias>Mother.Pain maternal</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Exam Data</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Mother</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Patient Complaints</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|10</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Exam Data</name>
+            <className>Exam Data</className>
+          </factIdentifier>
+          <className>string</className>
+          <factAlias>Exam Data</factAlias>
+          <expressionAlias>Mother.Patient Complaints</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Exam Data</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Mother</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Weight</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|11</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Exam Data</name>
+            <className>Exam Data</className>
+          </factIdentifier>
+          <className>number</className>
+          <factAlias>Exam Data</factAlias>
+          <expressionAlias>Mother.Weight</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Exam Data</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Mother</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Blood Pressure</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Systolic</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|12</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Exam Data</name>
+            <className>Exam Data</className>
+          </factIdentifier>
+          <className>number</className>
+          <factAlias>Exam Data</factAlias>
+          <expressionAlias>Mother.Blood Pressure.Systolic</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Exam Data</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Mother</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Blood Pressure</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Diastolic</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|13</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Exam Data</name>
+            <className>Exam Data</className>
+          </factIdentifier>
+          <className>number</className>
+          <factAlias>Exam Data</factAlias>
+          <expressionAlias>Mother.Blood Pressure.Diastolic</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Exam Data</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Mother</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Blood Pressure</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Cx Exam</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Cervical Dilation</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|14</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Exam Data</name>
+            <className>Exam Data</className>
+          </factIdentifier>
+          <className>number</className>
+          <factAlias>Exam Data</factAlias>
+          <expressionAlias>Mother.Blood Pressure.Cx Exam.Cervical Dilation</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Past GYN History</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Hx GC</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|15</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Past GYN History</name>
+            <className>Past GYN History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Past GYN History</factAlias>
+          <expressionAlias>Hx GC</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Past GYN History</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Hx Abn PAP</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|16</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Past GYN History</name>
+            <className>Past GYN History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Past GYN History</factAlias>
+          <expressionAlias>Hx Abn PAP</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Past GYN History</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Hx Infertility</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|17</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Past GYN History</name>
+            <className>Past GYN History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Past GYN History</factAlias>
+          <expressionAlias>Hx Infertility</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Past GYN History</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Risk factors for STDs</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|18</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Past GYN History</name>
+            <className>Past GYN History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Past GYN History</factAlias>
+          <expressionAlias>Risk factors for STDs</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Past GYN History</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Uterine Malformation</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|19</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Past GYN History</name>
+            <className>Past GYN History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Past GYN History</factAlias>
+          <expressionAlias>Uterine Malformation</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Past GYN History</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Hx of Genital Herpes</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|20</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Past GYN History</name>
+            <className>Past GYN History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Past GYN History</factAlias>
+          <expressionAlias>Hx of Genital Herpes</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Past GYN History</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Hx HPV</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|21</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Past GYN History</name>
+            <className>Past GYN History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Past GYN History</factAlias>
+          <expressionAlias>Hx HPV</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Past GYN History</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Recurrent Pregnancy loss</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|22</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Past GYN History</name>
+            <className>Past GYN History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Past GYN History</factAlias>
+          <expressionAlias>Recurrent Pregnancy loss</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Past GYN History</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Hx PID</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|23</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Past GYN History</name>
+            <className>Past GYN History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Past GYN History</factAlias>
+          <expressionAlias>Hx PID</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Past GYN History</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Hx Chlamydia</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|24</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Past GYN History</name>
+            <className>Past GYN History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Past GYN History</factAlias>
+          <expressionAlias>Hx Chlamydia</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Patient Complaints</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|25</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Patient Complaints</name>
+            <className>Patient Complaints</className>
+          </factIdentifier>
+          <className>java.util.List</className>
+          <factAlias>Patient Complaints</factAlias>
+          <expressionAlias>value</expressionAlias>
+          <genericTypes class="singleton-list">
+            <string>Patient_Complaints</string>
+          </genericTypes>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Previous Pregnancies</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|26</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Previous Pregnancies</name>
+            <className>Previous Pregnancies</className>
+          </factIdentifier>
+          <className>java.util.List</className>
+          <factAlias>Previous Pregnancies</factAlias>
+          <expressionAlias>value</expressionAlias>
+          <genericTypes class="singleton-list">
+            <string>Previous_Pregnancies</string>
+          </genericTypes>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Social History</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Tobacco use</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|27</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Social History</name>
+            <className>Social History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Social History</factAlias>
+          <expressionAlias>Tobacco use</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Social History</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Domestic violence</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|28</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Social History</name>
+            <className>Social History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Social History</factAlias>
+          <expressionAlias>Domestic violence</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Social History</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Employment</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|29</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Social History</name>
+            <className>Social History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Social History</factAlias>
+          <expressionAlias>Employment</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Social History</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Alcohol</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|30</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Social History</name>
+            <className>Social History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Social History</factAlias>
+          <expressionAlias>Alcohol</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Social History</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Exposures</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Recent travel outside the US</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|31</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Social History</name>
+            <className>Social History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Social History</factAlias>
+          <expressionAlias>Exposures.Recent travel outside the US</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Social History</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Exposures</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Environmental</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|32</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Social History</name>
+            <className>Social History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Social History</factAlias>
+          <expressionAlias>Exposures.Environmental</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Social History</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Exposures</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Occupational</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|33</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Social History</name>
+            <className>Social History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Social History</factAlias>
+          <expressionAlias>Exposures.Occupational</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Social History</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Exposures</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Street drugs</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Opiate/Opioid abuse</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|34</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Social History</name>
+            <className>Social History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Social History</factAlias>
+          <expressionAlias>Exposures.Street drugs.Opiate/Opioid abuse</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Vital Signs Measurements</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Body Mass Index</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|35</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Vital Signs Measurements</name>
+            <className>Vital Signs Measurements</className>
+          </factIdentifier>
+          <className>number</className>
+          <factAlias>Vital Signs Measurements</factAlias>
+          <expressionAlias>Body Mass Index</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Vital Signs Measurements</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Type of Pregnancy</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|36</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Vital Signs Measurements</name>
+            <className>Vital Signs Measurements</className>
+          </factIdentifier>
+          <className>Type of Pregnancy</className>
+          <factAlias>Vital Signs Measurements</factAlias>
+          <expressionAlias>Type of Pregnancy</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Vital Signs Measurements</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Pre-Pregnancy Weight</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|37</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Vital Signs Measurements</name>
+            <className>Vital Signs Measurements</className>
+          </factIdentifier>
+          <className>Pre-Pregnancy Weight</className>
+          <factAlias>Vital Signs Measurements</factAlias>
+          <expressionAlias>Pre-Pregnancy Weight</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Vital Signs Measurements</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Height</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|38</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Vital Signs Measurements</name>
+            <className>Vital Signs Measurements</className>
+          </factIdentifier>
+          <className>Height</className>
+          <factAlias>Vital Signs Measurements</factAlias>
+          <expressionAlias>Height</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Vital Signs Measurements</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Pregnancy achieved by ART</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|39</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Vital Signs Measurements</name>
+            <className>Vital Signs Measurements</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Vital Signs Measurements</factAlias>
+          <expressionAlias>Pregnancy achieved by ART</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Vital Signs Measurements</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Number of Pregnancies</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|40</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Vital Signs Measurements</name>
+            <className>Vital Signs Measurements</className>
+          </factIdentifier>
+          <className>Number of Pregnancies</className>
+          <factAlias>Vital Signs Measurements</factAlias>
+          <expressionAlias>Number of Pregnancies</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Vital Signs Measurements</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Uterine Size or Fundal Height</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|41</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Vital Signs Measurements</name>
+            <className>Vital Signs Measurements</className>
+          </factIdentifier>
+          <className>number</className>
+          <factAlias>Vital Signs Measurements</factAlias>
+          <expressionAlias>Uterine Size or Fundal Height</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Vital Signs Measurements</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>Cervical Length</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|42</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Vital Signs Measurements</name>
+            <className>Vital Signs Measurements</className>
+          </factIdentifier>
+          <className>Cervical Length</className>
+          <factAlias>Vital Signs Measurements</factAlias>
+          <expressionAlias>Cervical Length</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Determine Actions for Short Cervix</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|43</name>
+            <type>EXPECT</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Determine Actions for Short Cervix</name>
+            <className>Determine Actions for Short Cervix</className>
+          </factIdentifier>
+          <className>Actions_for_Short_Cervix</className>
+          <factAlias>Determine Actions for Short Cervix</factAlias>
+          <expressionAlias>value</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Determine Actions to Prevent Preterm Delivery</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|44</name>
+            <type>EXPECT</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Determine Actions to Prevent Preterm Delivery</name>
+            <className>Determine Actions to Prevent Preterm Delivery</className>
+          </factIdentifier>
+          <className>Actions_to_Prevent_Preterm_Delivery</className>
+          <factAlias>Determine Actions to Prevent Preterm Delivery</factAlias>
+          <expressionAlias>value</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Determine BMI Category</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|45</name>
+            <type>EXPECT</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Determine BMI Category</name>
+            <className>Determine BMI Category</className>
+          </factIdentifier>
+          <className>BMI_Category</className>
+          <factAlias>Determine BMI Category</factAlias>
+          <expressionAlias>value</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Determine Presence of Preterm Labor</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|46</name>
+            <type>EXPECT</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Determine Presence of Preterm Labor</name>
+            <className>Determine Presence of Preterm Labor</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Determine Presence of Preterm Labor</factAlias>
+          <expressionAlias>value</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Determine if Cervical length is Required</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|47</name>
+            <type>EXPECT</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Determine if Cervical length is Required</name>
+            <className>Determine if Cervical length is Required</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Determine if Cervical length is Required</factAlias>
+          <expressionAlias>value</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>PTD Risk Factor Index</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|48</name>
+            <type>EXPECT</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>PTD Risk Factor Index</name>
+            <className>PTD Risk Factor Index</className>
+          </factIdentifier>
+          <className>number</className>
+          <factAlias>PTD Risk Factor Index</factAlias>
+          <expressionAlias>value</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Preterm Delivery History</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|49</name>
+            <type>EXPECT</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Preterm Delivery History</name>
+            <className>Preterm Delivery History</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Preterm Delivery History</factAlias>
+          <expressionAlias>value</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Prior Cervical Procedures</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|50</name>
+            <type>EXPECT</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Prior Cervical Procedures</name>
+            <className>Prior Cervical Procedures</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Prior Cervical Procedures</factAlias>
+          <expressionAlias>value</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements class="linked-list">
+            <ExpressionElement>
+              <step>Prior OHP Shot Given</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|51</name>
+            <type>EXPECT</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Prior OHP Shot Given</name>
+            <className>Prior OHP Shot Given</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Prior OHP Shot Given</factAlias>
+          <expressionAlias>value</expressionAlias>
+          <genericTypes/>
+        </FactMapping>
+      </factMappings>
+      <dmnFilePath>src/main/resources/com/healthcare/preterm_delivery/Preterm Delivery.dmn</dmnFilePath>
+      <type>DMN</type>
+      <dmnNamespace>http://www.trisotech.com/definitions/_ad811181-0d1b-4213-b0d2-8f301b20d259</dmnNamespace>
+      <dmnName>Preterm Delivery</dmnName>
+      <skipFromBuild>false</skipFromBuild>
+      <stateless>false</stateless>
+    </simulationDescriptor>
+    <scenarios class="linked-list">
+      <Scenario>
+        <factMappingValues>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Exam Data</name>
+              <className>Exam Data</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|1</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Exam Data</name>
+              <className>Exam Data</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|2</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Exam Data</name>
+              <className>Exam Data</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|3</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Exam Data</name>
+              <className>Exam Data</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|4</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Exam Data</name>
+              <className>Exam Data</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|5</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Exam Data</name>
+              <className>Exam Data</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|6</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Exam Data</name>
+              <className>Exam Data</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|7</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Exam Data</name>
+              <className>Exam Data</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|8</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Exam Data</name>
+              <className>Exam Data</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|9</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Exam Data</name>
+              <className>Exam Data</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|10</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Exam Data</name>
+              <className>Exam Data</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|11</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Exam Data</name>
+              <className>Exam Data</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|12</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Exam Data</name>
+              <className>Exam Data</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|13</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Exam Data</name>
+              <className>Exam Data</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|14</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Past GYN History</name>
+              <className>Past GYN History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|15</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Past GYN History</name>
+              <className>Past GYN History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|16</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Past GYN History</name>
+              <className>Past GYN History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|17</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Past GYN History</name>
+              <className>Past GYN History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|18</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Past GYN History</name>
+              <className>Past GYN History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|19</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Past GYN History</name>
+              <className>Past GYN History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|20</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Past GYN History</name>
+              <className>Past GYN History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|21</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Past GYN History</name>
+              <className>Past GYN History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|22</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Past GYN History</name>
+              <className>Past GYN History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|23</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Past GYN History</name>
+              <className>Past GYN History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|24</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Patient Complaints</name>
+              <className>Patient Complaints</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|25</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Previous Pregnancies</name>
+              <className>Previous Pregnancies</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|26</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Social History</name>
+              <className>Social History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|27</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Social History</name>
+              <className>Social History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|28</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Social History</name>
+              <className>Social History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|29</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Social History</name>
+              <className>Social History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|30</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Social History</name>
+              <className>Social History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|31</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Social History</name>
+              <className>Social History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|32</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Social History</name>
+              <className>Social History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|33</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Social History</name>
+              <className>Social History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|34</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Vital Signs Measurements</name>
+              <className>Vital Signs Measurements</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|35</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Vital Signs Measurements</name>
+              <className>Vital Signs Measurements</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|36</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Vital Signs Measurements</name>
+              <className>Vital Signs Measurements</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|37</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Vital Signs Measurements</name>
+              <className>Vital Signs Measurements</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|38</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Vital Signs Measurements</name>
+              <className>Vital Signs Measurements</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|39</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Vital Signs Measurements</name>
+              <className>Vital Signs Measurements</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|40</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Vital Signs Measurements</name>
+              <className>Vital Signs Measurements</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|41</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Vital Signs Measurements</name>
+              <className>Vital Signs Measurements</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|42</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Determine Actions for Short Cervix</name>
+              <className>Determine Actions for Short Cervix</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|43</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Determine Actions to Prevent Preterm Delivery</name>
+              <className>Determine Actions to Prevent Preterm Delivery</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|44</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Determine BMI Category</name>
+              <className>Determine BMI Category</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|45</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Determine Presence of Preterm Labor</name>
+              <className>Determine Presence of Preterm Labor</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|46</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Determine if Cervical length is Required</name>
+              <className>Determine if Cervical length is Required</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|47</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>PTD Risk Factor Index</name>
+              <className>PTD Risk Factor Index</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|48</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Preterm Delivery History</name>
+              <className>Preterm Delivery History</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|49</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Prior Cervical Procedures</name>
+              <className>Prior Cervical Procedures</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|50</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Prior OHP Shot Given</name>
+              <className>Prior OHP Shot Given</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|51</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+          </FactMappingValue>
+        </factMappingValues>
+      </Scenario>
+    </scenarios>
+  </simulation>
+  <imports>
+    <imports/>
+  </imports>
+</ScenarioSimulationModel>
