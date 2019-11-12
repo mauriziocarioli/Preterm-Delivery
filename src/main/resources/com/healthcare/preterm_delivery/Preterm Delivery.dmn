@@ -274,6 +274,124 @@ False</semantic:allowedAnswers>
     <semantic:extensionElements/>
     <semantic:variable id="_01fc749a-90c9-464e-9b53-99f13808eac3" name="Past GYN History" typeRef="Past_GYN_History"/>
   </semantic:inputData>
+  <semantic:decision id="_3a627bbf-87cd-46ef-abbf-2c7f6f32655e" name="Determine Actions for Short Cervix">
+    <semantic:description>&lt;p>If at 20 weeks, a patient is noted to have a cervical length on Ultrasound &amp;lt; 2.5 cm, then that patient should be given vaginal progesterone weekly for the remainder of the pregnancy. This should not be done in the situation of infection or active contractions.&lt;/p></semantic:description>
+    <semantic:extensionElements/>
+    <semantic:question>What next action(s) should be taken to deal with the fact the patient has a short cervix?</semantic:question>
+    <semantic:allowedAnswers>Prescribe Vaginal Progesterone
+Perform Cervical Cerclage</semantic:allowedAnswers>
+    <semantic:variable id="_0eeeb699-5536-4129-be81-835d83920d40" name="Determine Actions for Short Cervix" typeRef="Actions_for_Short_Cervix"/>
+    <semantic:informationRequirement id="_15ae6659-283d-42f8-b743-4f99693844c1">
+      <semantic:requiredDecision href="#_05159b60-200b-45ad-8d8a-49a29b1fe578"/>
+    </semantic:informationRequirement>
+    <semantic:informationRequirement id="_000aa213-9817-4298-a8f0-ce4b35024292">
+      <semantic:requiredInput href="#_b4f2f9ed-2f75-453f-99ef-66933b229add"/>
+    </semantic:informationRequirement>
+    <semantic:informationRequirement id="_7d814893-e80a-431b-8db4-4776f23caea4">
+      <semantic:requiredInput href="#_c51216cf-5f4a-45a6-997b-23812ea76181"/>
+    </semantic:informationRequirement>
+    <semantic:decisionTable id="_a2950fa1-9a3d-4107-b8cf-ffbff666b46d" typeRef="Actions_for_Short_Cervix" hitPolicy="COLLECT" preferredOrientation="Rule-as-Row" outputLabel="Determine Actions for Short Cervix">
+      <semantic:input id="_53b50fdd-f6f9-48c3-85d2-73080d3cd6bb">
+        <semantic:inputExpression id="_25AD10EE-6A9E-4B6C-A381-F18AF191E481" typeRef="boolean">
+          <semantic:text>Preterm Delivery History</semantic:text>
+        </semantic:inputExpression>
+      </semantic:input>
+      <semantic:input id="_d4af29bb-c14f-4a5c-b631-c9381fa30055">
+        <semantic:inputExpression id="_65A0C20F-0ECF-4ADA-972F-78EF70699FC2" typeRef="string">
+          <semantic:text>Vital Signs Measurements.Type of Pregnancy</semantic:text>
+        </semantic:inputExpression>
+        <semantic:inputValues id="_F73444D9-5A06-4736-A96A-03A08171BE4D">
+          <semantic:text>"Singleton","Multiple"</semantic:text>
+        </semantic:inputValues>
+      </semantic:input>
+      <semantic:input id="_5b760a47-a487-43e7-bedb-bede07ca6983">
+        <semantic:inputExpression id="_F23A900F-E936-4AF7-B80D-FDFA38DC2717" typeRef="number">
+          <semantic:text>Exam Data.Gestational Age</semantic:text>
+        </semantic:inputExpression>
+        <semantic:inputValues id="_85B9CAD7-3966-4E7F-9669-63D8C4695ADC">
+          <semantic:text>&gt;=0</semantic:text>
+        </semantic:inputValues>
+      </semantic:input>
+      <semantic:input id="_7d0f7a70-912f-4e62-a3eb-71617e76a8c7">
+        <semantic:inputExpression id="_8BAF5A6F-C065-4108-B326-67819C4EC794" typeRef="number">
+          <semantic:text>Vital Signs Measurements.Cervical Length</semantic:text>
+        </semantic:inputExpression>
+        <semantic:inputValues id="_2EA5FF37-0E78-4B68-998B-EAD4FE2AD614">
+          <semantic:text>&gt;=0</semantic:text>
+        </semantic:inputValues>
+      </semantic:input>
+      <semantic:output id="_4c092605-73ce-4666-b463-7b94654929f5">
+        <semantic:outputValues id="_613EF228-B326-4583-852C-F8A3BEEC7CC7">
+          <semantic:text>"Prescribe Vaginal Progesterone","PerformCervical Cerclage"</semantic:text>
+        </semantic:outputValues>
+      </semantic:output>
+      <semantic:rule id="_655e69b0-2b22-4d59-9b8f-8d60bda84136">
+        <semantic:description>Progesterone</semantic:description>
+        <semantic:inputEntry id="_f77e26ee-3cbf-4494-aec6-eef9980e39d1">
+          <semantic:text>-</semantic:text>
+        </semantic:inputEntry>
+        <semantic:inputEntry id="_d0593627-d11d-4ca7-8276-3e84ec7d48e7">
+          <semantic:text>-</semantic:text>
+        </semantic:inputEntry>
+        <semantic:inputEntry id="_47073dcb-ecc9-45d1-a0e3-dfa525fb728a">
+          <semantic:text>&lt;24</semantic:text>
+        </semantic:inputEntry>
+        <semantic:inputEntry id="_180fd0bf-5141-4aea-bda7-fd41d5ee3a1c">
+          <semantic:text>&lt;25</semantic:text>
+        </semantic:inputEntry>
+        <semantic:outputEntry id="_c2e51bd5-6951-4b7d-ad16-715856a5feb7">
+          <semantic:text>"Prescribe Vaginal Progesterone"</semantic:text>
+        </semantic:outputEntry>
+      </semantic:rule>
+      <semantic:rule id="_d9a77caa-9f4a-4776-9995-46cc2242bcf5">
+        <semantic:description>Cervical Cerclage</semantic:description>
+        <semantic:inputEntry id="_a5aaada7-c6e3-441e-b5d3-ab4c8d996856">
+          <semantic:text>true</semantic:text>
+        </semantic:inputEntry>
+        <semantic:inputEntry id="_1167cfff-ad59-420f-ada6-c75f9384db1d">
+          <semantic:text>"Singleton"</semantic:text>
+        </semantic:inputEntry>
+        <semantic:inputEntry id="_815ececd-111d-4e0a-bb45-e8162b9560db">
+          <semantic:text>&lt;24</semantic:text>
+        </semantic:inputEntry>
+        <semantic:inputEntry id="_c4336d12-04c7-41a3-8584-c79ab3084d88">
+          <semantic:text>&lt;25</semantic:text>
+        </semantic:inputEntry>
+        <semantic:outputEntry id="_170182d1-ee76-4536-b749-6a8dffac1a8c">
+          <semantic:text>"Perform Cervical Cerclage"</semantic:text>
+        </semantic:outputEntry>
+      </semantic:rule>
+    </semantic:decisionTable>
+  </semantic:decision>
+  <semantic:decision id="_05159b60-200b-45ad-8d8a-49a29b1fe578" name="Preterm Delivery History">
+    <semantic:description>&lt;p>Look at the list of &lt;em>Previous Pregnancies&lt;/em> to identify the &lt;em>Length of previous delivery &lt;/em>then&amp;nbsp;verify if any previous delivery was between 22 and 34 weeks.&lt;/p></semantic:description>
+    <semantic:extensionElements/>
+    <semantic:question>&lt;p>Has the patient experienced preterm delivery in the past?&lt;/p></semantic:question>
+    <semantic:allowedAnswers>&lt;p>True&lt;br />False&lt;/p></semantic:allowedAnswers>
+    <semantic:variable id="_7b0c88c4-5af5-43ae-b68a-bf85cb2da274" name="Preterm Delivery History" typeRef="boolean"/>
+    <semantic:informationRequirement id="_36d77fa4-c068-4317-9fbf-3d4119324477">
+      <semantic:requiredInput href="#_d970c3b7-db38-4a70-9af3-c70791615cea"/>
+    </semantic:informationRequirement>
+    <semantic:context id="_a317d0b8-b084-42a3-97ab-aa06e1c742a1" typeRef="boolean">
+      <semantic:contextEntry>
+        <semantic:variable id="_c0f8f3ec-b044-4232-877d-fe7fc0480f1e" name="Length of previous delivery" typeRef="number"/>
+        <semantic:literalExpression id="_57280967-6062-4a71-b442-c646dfd34dc5">
+          <semantic:text>for i in Previous Pregnancies return i.Weeks to Delivery</semantic:text>
+        </semantic:literalExpression>
+      </semantic:contextEntry>
+      <semantic:contextEntry>
+        <semantic:variable id="_3835d7dc-5c79-4c2a-8bb2-01919f6a1913" name="Previous PTD" typeRef="Boolean_collection"/>
+        <semantic:literalExpression id="_64904f79-6d59-41a9-8154-b62372d5f5b1">
+          <semantic:text>for i in Length of previous delivery return i between 22 and 34</semantic:text>
+        </semantic:literalExpression>
+      </semantic:contextEntry>
+      <semantic:contextEntry>
+        <semantic:literalExpression id="_bc0ea868-aa04-4795-97a6-a96b39777172">
+          <semantic:text>list contains( Previous PTD, true )</semantic:text>
+        </semantic:literalExpression>
+      </semantic:contextEntry>
+    </semantic:context>
+  </semantic:decision>
   <semantic:decision id="_c97e5398-f40a-4a5f-b2f8-e96793a39c64" name="Determine BMI Category">
     <semantic:description>&lt;p>BMI is a useful measure of overweight and obesity. It is calculated from your height and weight. BMI is an estimate of body fat and a good gauge of the risk for diseases that can occur with more body fat. The higher the BMI, the higher the risk for certain diseases such as heart disease, high blood pressure, type 2 diabetes, gallstones, breathing problems, and certain cancer.&lt;/p></semantic:description>
     <semantic:extensionElements/>
@@ -363,124 +481,6 @@ Obesity</semantic:allowedAnswers>
         </semantic:literalExpression>
       </semantic:contextEntry>
     </semantic:context>
-  </semantic:decision>
-  <semantic:decision id="_05159b60-200b-45ad-8d8a-49a29b1fe578" name="Preterm Delivery History">
-    <semantic:description>&lt;p>Look at the list of &lt;em>Previous Pregnancies&lt;/em> to identify the &lt;em>Length of previous delivery &lt;/em>then&amp;nbsp;verify if any previous delivery was between 22 and 34 weeks.&lt;/p></semantic:description>
-    <semantic:extensionElements/>
-    <semantic:question>&lt;p>Has the patient experienced preterm delivery in the past?&lt;/p></semantic:question>
-    <semantic:allowedAnswers>&lt;p>True&lt;br />False&lt;/p></semantic:allowedAnswers>
-    <semantic:variable id="_7b0c88c4-5af5-43ae-b68a-bf85cb2da274" name="Preterm Delivery History" typeRef="boolean"/>
-    <semantic:informationRequirement id="_36d77fa4-c068-4317-9fbf-3d4119324477">
-      <semantic:requiredInput href="#_d970c3b7-db38-4a70-9af3-c70791615cea"/>
-    </semantic:informationRequirement>
-    <semantic:context id="_a317d0b8-b084-42a3-97ab-aa06e1c742a1" typeRef="boolean">
-      <semantic:contextEntry>
-        <semantic:variable id="_c0f8f3ec-b044-4232-877d-fe7fc0480f1e" name="Length of previous delivery" typeRef="number"/>
-        <semantic:literalExpression id="_57280967-6062-4a71-b442-c646dfd34dc5">
-          <semantic:text>for i in Previous Pregnancies return i.Weeks to Delivery</semantic:text>
-        </semantic:literalExpression>
-      </semantic:contextEntry>
-      <semantic:contextEntry>
-        <semantic:variable id="_3835d7dc-5c79-4c2a-8bb2-01919f6a1913" name="Previous PTD" typeRef="Boolean_collection"/>
-        <semantic:literalExpression id="_64904f79-6d59-41a9-8154-b62372d5f5b1">
-          <semantic:text>for i in Length of previous delivery return i between 22 and 34</semantic:text>
-        </semantic:literalExpression>
-      </semantic:contextEntry>
-      <semantic:contextEntry>
-        <semantic:literalExpression id="_bc0ea868-aa04-4795-97a6-a96b39777172">
-          <semantic:text>list contains( Previous PTD, true )</semantic:text>
-        </semantic:literalExpression>
-      </semantic:contextEntry>
-    </semantic:context>
-  </semantic:decision>
-  <semantic:decision id="_3a627bbf-87cd-46ef-abbf-2c7f6f32655e" name="Determine Actions for Short Cervix">
-    <semantic:description>&lt;p>If at 20 weeks, a patient is noted to have a cervical length on Ultrasound &amp;lt; 2.5 cm, then that patient should be given vaginal progesterone weekly for the remainder of the pregnancy. This should not be done in the situation of infection or active contractions.&lt;/p></semantic:description>
-    <semantic:extensionElements/>
-    <semantic:question>What next action(s) should be taken to deal with the fact the patient has a short cervix?</semantic:question>
-    <semantic:allowedAnswers>Prescribe Vaginal Progesterone
-Perform Cervical Cerclage</semantic:allowedAnswers>
-    <semantic:variable id="_0eeeb699-5536-4129-be81-835d83920d40" name="Determine Actions for Short Cervix" typeRef="Actions_for_Short_Cervix"/>
-    <semantic:informationRequirement id="_15ae6659-283d-42f8-b743-4f99693844c1">
-      <semantic:requiredDecision href="#_05159b60-200b-45ad-8d8a-49a29b1fe578"/>
-    </semantic:informationRequirement>
-    <semantic:informationRequirement id="_000aa213-9817-4298-a8f0-ce4b35024292">
-      <semantic:requiredInput href="#_b4f2f9ed-2f75-453f-99ef-66933b229add"/>
-    </semantic:informationRequirement>
-    <semantic:informationRequirement id="_7d814893-e80a-431b-8db4-4776f23caea4">
-      <semantic:requiredInput href="#_c51216cf-5f4a-45a6-997b-23812ea76181"/>
-    </semantic:informationRequirement>
-    <semantic:decisionTable id="_a2950fa1-9a3d-4107-b8cf-ffbff666b46d" typeRef="Actions_for_Short_Cervix" hitPolicy="COLLECT" preferredOrientation="Rule-as-Row" outputLabel="Determine Actions for Short Cervix">
-      <semantic:input id="_53b50fdd-f6f9-48c3-85d2-73080d3cd6bb">
-        <semantic:inputExpression id="_25AD10EE-6A9E-4B6C-A381-F18AF191E481" typeRef="boolean">
-          <semantic:text>Preterm Delivery History</semantic:text>
-        </semantic:inputExpression>
-      </semantic:input>
-      <semantic:input id="_d4af29bb-c14f-4a5c-b631-c9381fa30055">
-        <semantic:inputExpression id="_65A0C20F-0ECF-4ADA-972F-78EF70699FC2" typeRef="string">
-          <semantic:text>Vital Signs Measurements.Type of Pregnancy</semantic:text>
-        </semantic:inputExpression>
-        <semantic:inputValues id="_F73444D9-5A06-4736-A96A-03A08171BE4D">
-          <semantic:text>"Singleton","Multiple"</semantic:text>
-        </semantic:inputValues>
-      </semantic:input>
-      <semantic:input id="_5b760a47-a487-43e7-bedb-bede07ca6983">
-        <semantic:inputExpression id="_F23A900F-E936-4AF7-B80D-FDFA38DC2717" typeRef="number">
-          <semantic:text>Exam Data.Gestational Age</semantic:text>
-        </semantic:inputExpression>
-        <semantic:inputValues id="_85B9CAD7-3966-4E7F-9669-63D8C4695ADC">
-          <semantic:text>&gt;=0</semantic:text>
-        </semantic:inputValues>
-      </semantic:input>
-      <semantic:input id="_7d0f7a70-912f-4e62-a3eb-71617e76a8c7">
-        <semantic:inputExpression id="_8BAF5A6F-C065-4108-B326-67819C4EC794" typeRef="number">
-          <semantic:text>Vital Signs Measurements.Cervical Length</semantic:text>
-        </semantic:inputExpression>
-        <semantic:inputValues id="_2EA5FF37-0E78-4B68-998B-EAD4FE2AD614">
-          <semantic:text>&gt;=0</semantic:text>
-        </semantic:inputValues>
-      </semantic:input>
-      <semantic:output id="_4c092605-73ce-4666-b463-7b94654929f5">
-        <semantic:outputValues id="_613EF228-B326-4583-852C-F8A3BEEC7CC7">
-          <semantic:text>"Prescribe Vaginal Progesterone","PerformCervical Cerclage"</semantic:text>
-        </semantic:outputValues>
-      </semantic:output>
-      <semantic:rule id="_655e69b0-2b22-4d59-9b8f-8d60bda84136">
-        <semantic:description>Progesterone</semantic:description>
-        <semantic:inputEntry id="_f77e26ee-3cbf-4494-aec6-eef9980e39d1">
-          <semantic:text>-</semantic:text>
-        </semantic:inputEntry>
-        <semantic:inputEntry id="_d0593627-d11d-4ca7-8276-3e84ec7d48e7">
-          <semantic:text>-</semantic:text>
-        </semantic:inputEntry>
-        <semantic:inputEntry id="_47073dcb-ecc9-45d1-a0e3-dfa525fb728a">
-          <semantic:text>&lt;24</semantic:text>
-        </semantic:inputEntry>
-        <semantic:inputEntry id="_180fd0bf-5141-4aea-bda7-fd41d5ee3a1c">
-          <semantic:text>&lt;25</semantic:text>
-        </semantic:inputEntry>
-        <semantic:outputEntry id="_c2e51bd5-6951-4b7d-ad16-715856a5feb7">
-          <semantic:text>"Prescribe Vaginal Progesterone"</semantic:text>
-        </semantic:outputEntry>
-      </semantic:rule>
-      <semantic:rule id="_d9a77caa-9f4a-4776-9995-46cc2242bcf5">
-        <semantic:description>Cervical Cerclage</semantic:description>
-        <semantic:inputEntry id="_a5aaada7-c6e3-441e-b5d3-ab4c8d996856">
-          <semantic:text>true</semantic:text>
-        </semantic:inputEntry>
-        <semantic:inputEntry id="_1167cfff-ad59-420f-ada6-c75f9384db1d">
-          <semantic:text>"Singleton"</semantic:text>
-        </semantic:inputEntry>
-        <semantic:inputEntry id="_815ececd-111d-4e0a-bb45-e8162b9560db">
-          <semantic:text>&lt;24</semantic:text>
-        </semantic:inputEntry>
-        <semantic:inputEntry id="_c4336d12-04c7-41a3-8584-c79ab3084d88">
-          <semantic:text>&lt;25</semantic:text>
-        </semantic:inputEntry>
-        <semantic:outputEntry id="_170182d1-ee76-4536-b749-6a8dffac1a8c">
-          <semantic:text>"Perform Cervical Cerclage"</semantic:text>
-        </semantic:outputEntry>
-      </semantic:rule>
-    </semantic:decisionTable>
   </semantic:decision>
   <semantic:decision id="_6fa03841-69c0-40b6-a597-20338418261d" name="Determine if Cervical length is Required">
     <semantic:description>&lt;p>To save cost a Sonogram to determine cervical length should only be performed if Preterm Delivery (PTD) factors are observed.&lt;/p></semantic:description>
@@ -651,6 +651,10 @@ False</semantic:allowedAnswers>
       </semantic:literalExpression>
     </semantic:encapsulatedLogic>
   </semantic:businessKnowledgeModel>
+  <semantic:inputData id="_d970c3b7-db38-4a70-9af3-c70791615cea" name="Previous Pregnancies">
+    <semantic:extensionElements/>
+    <semantic:variable id="_05aeff8d-f6c1-40c4-b2fa-474f5e42730e" name="Previous Pregnancies" typeRef="Previous_Pregnancies"/>
+  </semantic:inputData>
   <semantic:decision id="_42ef4eb1-c0f7-4809-bdf5-f262af3d2301" name="Determine Presence of Preterm Labor">
     <semantic:extensionElements/>
     <semantic:question>Does the patient exhibit any known Preterm Labor (PTL) symptoms?</semantic:question>
@@ -671,10 +675,6 @@ False</semantic:allowedAnswers>
         )</semantic:text>
     </semantic:literalExpression>
   </semantic:decision>
-  <semantic:inputData id="_d970c3b7-db38-4a70-9af3-c70791615cea" name="Previous Pregnancies">
-    <semantic:extensionElements/>
-    <semantic:variable id="_05aeff8d-f6c1-40c4-b2fa-474f5e42730e" name="Previous Pregnancies" typeRef="Previous_Pregnancies"/>
-  </semantic:inputData>
   <semantic:decision id="_83a3469b-f7ad-4557-bb37-1ce734460af2" name="PTD Risk Factor Index">
     <semantic:extensionElements/>
     <semantic:question>How many Preterm Delivery (PTD) factors do this patient exhibit? </semantic:question>
@@ -888,6 +888,29 @@ False</semantic:allowedAnswers>
           <drools:ComponentWidths dmnElementRef="_2d2ebab8-61f5-4865-8e7e-ece9dad2b6e1">
             <drools:width>652.0</drools:width>
           </drools:ComponentWidths>
+          <drools:ComponentWidths dmnElementRef="_a2950fa1-9a3d-4107-b8cf-ffbff666b46d">
+            <drools:width>50.0</drools:width>
+            <drools:width>168.0</drools:width>
+            <drools:width>305.0</drools:width>
+            <drools:width>199.0</drools:width>
+            <drools:width>288.0</drools:width>
+            <drools:width>272.0</drools:width>
+            <drools:width>149.0</drools:width>
+          </drools:ComponentWidths>
+          <drools:ComponentWidths dmnElementRef="_a317d0b8-b084-42a3-97ab-aa06e1c742a1">
+            <drools:width>50.0</drools:width>
+            <drools:width>214.0</drools:width>
+            <drools:width>551.0</drools:width>
+          </drools:ComponentWidths>
+          <drools:ComponentWidths dmnElementRef="_57280967-6062-4a71-b442-c646dfd34dc5">
+            <drools:width>551.0</drools:width>
+          </drools:ComponentWidths>
+          <drools:ComponentWidths dmnElementRef="_64904f79-6d59-41a9-8154-b62372d5f5b1">
+            <drools:width>551.0</drools:width>
+          </drools:ComponentWidths>
+          <drools:ComponentWidths dmnElementRef="_bc0ea868-aa04-4795-97a6-a96b39777172">
+            <drools:width>551.0</drools:width>
+          </drools:ComponentWidths>
           <drools:ComponentWidths dmnElementRef="_06d64849-99b9-4759-9776-19da16acb7e8">
             <drools:width>50.0</drools:width>
             <drools:width>100.0</drools:width>
@@ -913,29 +936,6 @@ False</semantic:allowedAnswers>
           </drools:ComponentWidths>
           <drools:ComponentWidths dmnElementRef="_439fe973-3c9e-479e-b793-f728a2b98fe4">
             <drools:width>567.0</drools:width>
-          </drools:ComponentWidths>
-          <drools:ComponentWidths dmnElementRef="_a317d0b8-b084-42a3-97ab-aa06e1c742a1">
-            <drools:width>50.0</drools:width>
-            <drools:width>214.0</drools:width>
-            <drools:width>551.0</drools:width>
-          </drools:ComponentWidths>
-          <drools:ComponentWidths dmnElementRef="_57280967-6062-4a71-b442-c646dfd34dc5">
-            <drools:width>551.0</drools:width>
-          </drools:ComponentWidths>
-          <drools:ComponentWidths dmnElementRef="_64904f79-6d59-41a9-8154-b62372d5f5b1">
-            <drools:width>551.0</drools:width>
-          </drools:ComponentWidths>
-          <drools:ComponentWidths dmnElementRef="_bc0ea868-aa04-4795-97a6-a96b39777172">
-            <drools:width>551.0</drools:width>
-          </drools:ComponentWidths>
-          <drools:ComponentWidths dmnElementRef="_a2950fa1-9a3d-4107-b8cf-ffbff666b46d">
-            <drools:width>50.0</drools:width>
-            <drools:width>168.0</drools:width>
-            <drools:width>305.0</drools:width>
-            <drools:width>199.0</drools:width>
-            <drools:width>288.0</drools:width>
-            <drools:width>272.0</drools:width>
-            <drools:width>149.0</drools:width>
           </drools:ComponentWidths>
           <drools:ComponentWidths dmnElementRef="_4a126757-48bf-4176-bc02-f38cfc35f268">
             <drools:width>436.0</drools:width>
@@ -1012,13 +1012,13 @@ False</semantic:allowedAnswers>
         <dc:Bounds x="1450.75" y="436.99999618530273" width="135.48234176635742" height="60.00000762939453"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_c97e5398-f40a-4a5f-b2f8-e96793a39c64" dmnElementRef="_c97e5398-f40a-4a5f-b2f8-e96793a39c64" isCollapsed="false">
+      <dmndi:DMNShape id="dmnshape-_3a627bbf-87cd-46ef-abbf-2c7f6f32655e" dmnElementRef="_3a627bbf-87cd-46ef-abbf-2c7f6f32655e" isCollapsed="false">
         <dmndi:DMNStyle fontFamily="arial,helvetica,sans-serif" fontSize="11">
           <dmndi:FillColor red="255" green="255" blue="153"/>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="754.4911708831787" y="437" width="153" height="60"/>
+        <dc:Bounds x="520.25" y="90" width="153" height="60"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_05159b60-200b-45ad-8d8a-49a29b1fe578" dmnElementRef="_05159b60-200b-45ad-8d8a-49a29b1fe578" isCollapsed="false">
@@ -1030,13 +1030,13 @@ False</semantic:allowedAnswers>
         <dc:Bounds x="589.4911708831787" y="260" width="153" height="60"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_3a627bbf-87cd-46ef-abbf-2c7f6f32655e" dmnElementRef="_3a627bbf-87cd-46ef-abbf-2c7f6f32655e" isCollapsed="false">
+      <dmndi:DMNShape id="dmnshape-_c97e5398-f40a-4a5f-b2f8-e96793a39c64" dmnElementRef="_c97e5398-f40a-4a5f-b2f8-e96793a39c64" isCollapsed="false">
         <dmndi:DMNStyle fontFamily="arial,helvetica,sans-serif" fontSize="11">
           <dmndi:FillColor red="255" green="255" blue="153"/>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="520.25" y="90" width="153" height="60"/>
+        <dc:Bounds x="754.4911708831787" y="437" width="153" height="60"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_6fa03841-69c0-40b6-a597-20338418261d" dmnElementRef="_6fa03841-69c0-40b6-a597-20338418261d" isCollapsed="false">
@@ -1084,15 +1084,6 @@ False</semantic:allowedAnswers>
         <dc:Bounds x="754.9911708831787" y="338.5" width="152" height="59"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_42ef4eb1-c0f7-4809-bdf5-f262af3d2301" dmnElementRef="_42ef4eb1-c0f7-4809-bdf5-f262af3d2301" isCollapsed="false">
-        <dmndi:DMNStyle fontFamily="arial,helvetica,sans-serif" fontSize="11">
-          <dmndi:FillColor red="255" green="255" blue="153"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="114" y="260" width="153" height="60"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_d970c3b7-db38-4a70-9af3-c70791615cea" dmnElementRef="_d970c3b7-db38-4a70-9af3-c70791615cea" isCollapsed="false">
         <dmndi:DMNStyle fontFamily="arial,helvetica,sans-serif" fontSize="11">
           <dmndi:FillColor red="153" green="204" blue="255"/>
@@ -1100,6 +1091,15 @@ False</semantic:allowedAnswers>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="598.25" y="605.9999961853027" width="135.48234176635742" height="60.00000762939453"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_42ef4eb1-c0f7-4809-bdf5-f262af3d2301" dmnElementRef="_42ef4eb1-c0f7-4809-bdf5-f262af3d2301" isCollapsed="false">
+        <dmndi:DMNStyle fontFamily="arial,helvetica,sans-serif" fontSize="11">
+          <dmndi:FillColor red="255" green="255" blue="153"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="114" y="260" width="153" height="60"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_83a3469b-f7ad-4557-bb37-1ce734460af2" dmnElementRef="_83a3469b-f7ad-4557-bb37-1ce734460af2" isCollapsed="false">
@@ -1124,18 +1124,6 @@ False</semantic:allowedAnswers>
         <di:waypoint x="695.9879722595215" y="605.9999961853027"/>
         <di:waypoint x="1195.4911708831787" y="497"/>
       </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-_f77382f4-ae77-49c1-9b7c-8f87accc493a" dmnElementRef="_f77382f4-ae77-49c1-9b7c-8f87accc493a">
-        <di:waypoint x="536.7468013763428" y="605.9999961853027"/>
-        <di:waypoint x="830.9911708831787" y="497"/>
-      </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-_71b4d8a5-8c92-4b09-9f49-cb8c6ac1f446" dmnElementRef="_71b4d8a5-8c92-4b09-9f49-cb8c6ac1f446">
-        <di:waypoint x="830.9911708831787" y="397.5"/>
-        <di:waypoint x="830.9911708831787" y="437"/>
-      </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-_36d77fa4-c068-4317-9fbf-3d4119324477" dmnElementRef="_36d77fa4-c068-4317-9fbf-3d4119324477">
-        <di:waypoint x="665.9879722595215" y="605.9999961853027"/>
-        <di:waypoint x="665.9911708831787" y="320"/>
-      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_15ae6659-283d-42f8-b743-4f99693844c1" dmnElementRef="_15ae6659-283d-42f8-b743-4f99693844c1">
         <di:waypoint x="675.9911708831787" y="260"/>
         <di:waypoint x="646.75" y="150"/>
@@ -1147,6 +1135,18 @@ False</semantic:allowedAnswers>
       <dmndi:DMNEdge id="dmnedge-_7d814893-e80a-431b-8db4-4776f23caea4" dmnElementRef="_7d814893-e80a-431b-8db4-4776f23caea4">
         <di:waypoint x="368.7468013763428" y="605.9999961853027"/>
         <di:waypoint x="546.75" y="150"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-_36d77fa4-c068-4317-9fbf-3d4119324477" dmnElementRef="_36d77fa4-c068-4317-9fbf-3d4119324477">
+        <di:waypoint x="665.9879722595215" y="605.9999961853027"/>
+        <di:waypoint x="665.9911708831787" y="320"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-_f77382f4-ae77-49c1-9b7c-8f87accc493a" dmnElementRef="_f77382f4-ae77-49c1-9b7c-8f87accc493a">
+        <di:waypoint x="536.7468013763428" y="605.9999961853027"/>
+        <di:waypoint x="830.9911708831787" y="497"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-_71b4d8a5-8c92-4b09-9f49-cb8c6ac1f446" dmnElementRef="_71b4d8a5-8c92-4b09-9f49-cb8c6ac1f446">
+        <di:waypoint x="830.9911708831787" y="397.5"/>
+        <di:waypoint x="830.9911708831787" y="437"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_c52044b9-acf5-4e8e-8d3a-dd454bf82bc9" dmnElementRef="_c52044b9-acf5-4e8e-8d3a-dd454bf82bc9">
         <di:waypoint x="1195.4911708831787" y="260"/>
