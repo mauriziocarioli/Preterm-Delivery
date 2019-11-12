@@ -8,6 +8,13 @@
   <packaging>kjar</packaging>
   <name>Preterm-Delivery</name>
   <description></description>
+  <properties>
+    <!-- RHDM 7.4.1 -->
+    <!--version.org.kie>7.23.0.Final-redhat-00003</version.org.kie-->
+    <!-- RHDM 7.5.0 -->
+    <version.org.kie>7.26.0.Final-redhat-00005</version.org.kie>
+    <!-- version.org.kie>7.29.0.Final</version.org.kie-->
+  </properties>
   <dependencies>
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
@@ -18,13 +25,13 @@
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-internal</artifactId>
-      <version>7.26.0.Final-redhat-00005</version>
+      <version>${version.org.kie}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.optaplanner</groupId>
       <artifactId>optaplanner-core</artifactId>
-      <version>7.26.0.Final-redhat-00005</version>
+      <version>${version.org.kie}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -36,13 +43,13 @@
     <dependency>
       <groupId>org.optaplanner</groupId>
       <artifactId>optaplanner-persistence-jaxb</artifactId>
-      <version>7.26.0.Final-redhat-00005</version>
+      <version>${version.org.kie}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-api</artifactId>
-      <version>7.26.0.Final-redhat-00005</version>
+      <version>${version.org.kie}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -54,37 +61,37 @@
     <dependency>
       <groupId>org.drools</groupId>
       <artifactId>drools-scenario-simulation-backend</artifactId>
-      <version>7.26.0.Final-redhat-00005</version>
+      <version>${version.org.kie}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.drools</groupId>
       <artifactId>drools-compiler</artifactId>
-      <version>7.26.0.Final-redhat-00005</version>
+      <version>${version.org.kie}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.drools</groupId>
       <artifactId>drools-workbench-models-guided-dtable</artifactId>
-      <version>7.26.0.Final-redhat-00005</version>
+      <version>${version.org.kie}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-dmn-feel</artifactId>
-      <version>7.26.0.Final-redhat-00005</version>
+      <version>${version.org.kie}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-dmn-api</artifactId>
-      <version>7.26.0.Final-redhat-00005</version>
+      <version>${version.org.kie}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-dmn-core</artifactId>
-      <version>7.26.0.Final-redhat-00005</version>
+      <version>${version.org.kie}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -93,7 +100,7 @@
       <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
-        <version>7.26.0.Final-redhat-00005</version>
+        <version>${version.org.kie}</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>
