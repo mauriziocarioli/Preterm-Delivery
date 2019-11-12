@@ -909,13 +909,32 @@ False</semantic:allowedAnswers>
           <drools:ComponentWidths dmnElementRef="_bc0ea868-aa04-4795-97a6-a96b39777172">
             <drools:width>551.0</drools:width>
           </drools:ComponentWidths>
-          <drools:ComponentWidths dmnElementRef="_06d64849-99b9-4759-9776-19da16acb7e8"/>
-          <drools:ComponentWidths dmnElementRef="_9c87303c-ae25-4cc6-aade-d8caf1c9cef0"/>
+          <drools:ComponentWidths dmnElementRef="_06d64849-99b9-4759-9776-19da16acb7e8">
+            <drools:width>50.0</drools:width>
+            <drools:width>100.0</drools:width>
+            <drools:width>567.0</drools:width>
+          </drools:ComponentWidths>
+          <drools:ComponentWidths dmnElementRef="_9c87303c-ae25-4cc6-aade-d8caf1c9cef0">
+            <drools:width>50.0</drools:width>
+            <drools:width>100.0</drools:width>
+            <drools:width>397.0</drools:width>
+          </drools:ComponentWidths>
           <drools:ComponentWidths dmnElementRef="literal__9c87303c-ae25-4cc6-aade-d8caf1c9cef0"/>
-          <drools:ComponentWidths dmnElementRef="_41b3c299-2ab4-4891-aa13-fb964957cbe4"/>
-          <drools:ComponentWidths dmnElementRef="_2a3ab52b-79aa-41ce-a5ac-5eb35561ee10"/>
-          <drools:ComponentWidths dmnElementRef="_a8955ba2-9211-45eb-8552-31ef2e3d11c7"/>
-          <drools:ComponentWidths dmnElementRef="_439fe973-3c9e-479e-b793-f728a2b98fe4"/>
+          <drools:ComponentWidths dmnElementRef="_41b3c299-2ab4-4891-aa13-fb964957cbe4">
+            <drools:width>397.0</drools:width>
+          </drools:ComponentWidths>
+          <drools:ComponentWidths dmnElementRef="_2a3ab52b-79aa-41ce-a5ac-5eb35561ee10">
+            <drools:width>397.0</drools:width>
+          </drools:ComponentWidths>
+          <drools:ComponentWidths dmnElementRef="_a8955ba2-9211-45eb-8552-31ef2e3d11c7">
+            <drools:width>50.0</drools:width>
+            <drools:width>100.0</drools:width>
+            <drools:width>138.0</drools:width>
+            <drools:width>259.0</drools:width>
+          </drools:ComponentWidths>
+          <drools:ComponentWidths dmnElementRef="_439fe973-3c9e-479e-b793-f728a2b98fe4">
+            <drools:width>567.0</drools:width>
+          </drools:ComponentWidths>
           <drools:ComponentWidths dmnElementRef="_4a126757-48bf-4176-bc02-f38cfc35f268"/>
           <drools:ComponentWidths dmnElementRef="_7eaf8b1f-cd25-40b2-9b68-ee446f75805a">
             <drools:width>50.0</drools:width>
