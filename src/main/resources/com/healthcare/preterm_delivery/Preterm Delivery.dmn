@@ -947,8 +947,13 @@ False</semantic:allowedAnswers>
             <drools:width>120.0</drools:width>
           </drools:ComponentWidths>
           <drools:ComponentWidths dmnElementRef="_1e1bb505-48ab-4192-b52c-6749edd8cb64"/>
-          <drools:ComponentWidths dmnElementRef="_4924efc8-e7a2-49f8-952f-b0330e74dae1"/>
-          <drools:ComponentWidths dmnElementRef="_bd39e58d-1355-4f66-a663-a95888c04eb7"/>
+          <drools:ComponentWidths dmnElementRef="_4924efc8-e7a2-49f8-952f-b0330e74dae1">
+            <drools:width>349.0</drools:width>
+          </drools:ComponentWidths>
+          <drools:ComponentWidths dmnElementRef="_bd39e58d-1355-4f66-a663-a95888c04eb7">
+            <drools:width>50.0</drools:width>
+            <drools:width>349.0</drools:width>
+          </drools:ComponentWidths>
           <drools:ComponentWidths dmnElementRef="_3179f48f-9c06-49ee-82d4-89239013189c">
             <drools:width>679.0</drools:width>
           </drools:ComponentWidths>
