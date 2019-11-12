@@ -1641,7 +1641,6 @@
               <name>1|44</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">&quot;Give shot of Progesterone&quot;</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
