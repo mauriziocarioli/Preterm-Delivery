@@ -326,6 +326,7 @@ Perform Cervical Cerclage</semantic:allowedAnswers>
         </semantic:outputValues>
       </semantic:output>
       <semantic:rule id="_655e69b0-2b22-4d59-9b8f-8d60bda84136">
+        <semantic:description>Progesterone</semantic:description>
         <semantic:inputEntry id="_f77e26ee-3cbf-4494-aec6-eef9980e39d1">
           <semantic:text>-</semantic:text>
         </semantic:inputEntry>
@@ -343,6 +344,7 @@ Perform Cervical Cerclage</semantic:allowedAnswers>
         </semantic:outputEntry>
       </semantic:rule>
       <semantic:rule id="_d9a77caa-9f4a-4776-9995-46cc2242bcf5">
+        <semantic:description>Cervical Cerclage</semantic:description>
         <semantic:inputEntry id="_a5aaada7-c6e3-441e-b5d3-ab4c8d996856">
           <semantic:text>true</semantic:text>
         </semantic:inputEntry>
@@ -356,7 +358,7 @@ Perform Cervical Cerclage</semantic:allowedAnswers>
           <semantic:text>&lt;25</semantic:text>
         </semantic:inputEntry>
         <semantic:outputEntry id="_170182d1-ee76-4536-b749-6a8dffac1a8c">
-          <semantic:text>"PerformCervical Cerclage"</semantic:text>
+          <semantic:text>"Perform Cervical Cerclage"</semantic:text>
         </semantic:outputEntry>
       </semantic:rule>
     </semantic:decisionTable>
@@ -884,7 +886,15 @@ False</semantic:allowedAnswers>
       <di:extension>
         <drools:ComponentsWidthsExtension>
           <drools:ComponentWidths dmnElementRef="_2d2ebab8-61f5-4865-8e7e-ece9dad2b6e1"/>
-          <drools:ComponentWidths dmnElementRef="_a2950fa1-9a3d-4107-b8cf-ffbff666b46d"/>
+          <drools:ComponentWidths dmnElementRef="_a2950fa1-9a3d-4107-b8cf-ffbff666b46d">
+            <drools:width>50.0</drools:width>
+            <drools:width>168.0</drools:width>
+            <drools:width>305.0</drools:width>
+            <drools:width>199.0</drools:width>
+            <drools:width>288.0</drools:width>
+            <drools:width>272.0</drools:width>
+            <drools:width>149.0</drools:width>
+          </drools:ComponentWidths>
           <drools:ComponentWidths dmnElementRef="_a317d0b8-b084-42a3-97ab-aa06e1c742a1"/>
           <drools:ComponentWidths dmnElementRef="_57280967-6062-4a71-b442-c646dfd34dc5"/>
           <drools:ComponentWidths dmnElementRef="_64904f79-6d59-41a9-8154-b62372d5f5b1"/>
