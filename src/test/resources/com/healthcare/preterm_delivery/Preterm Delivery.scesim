@@ -1632,7 +1632,7 @@
               <name>1|43</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">&quot;Perform Cervical Cerclage&quot;</rawValue>
+            <rawValue class="string">Perform Cervical Cerclage</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
