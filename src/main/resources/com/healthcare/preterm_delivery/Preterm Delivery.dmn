@@ -240,7 +240,7 @@
   <semantic:itemDefinition id="_AF47266B-D8E8-4734-A6DA-8B5AA11F84AE" name="Actions_for_Short_Cervix" isCollection="false">
     <semantic:typeRef>string</semantic:typeRef>
     <semantic:allowedValues id="_61EC86D3-CA6F-4710-B6A7-D298DE67F9E2">
-      <semantic:text>"Prescribe Vaginal Progesterone","PerformCervical Cerclage"</semantic:text>
+      <semantic:text>"Prescribe Vaginal Progesterone","Perform Cervical Cerclage"</semantic:text>
     </semantic:allowedValues>
   </semantic:itemDefinition>
   <semantic:itemDefinition id="_66D244D7-48A1-4E73-97FF-46AEDC6E8A51" name="Boolean_collection" isCollection="true">
