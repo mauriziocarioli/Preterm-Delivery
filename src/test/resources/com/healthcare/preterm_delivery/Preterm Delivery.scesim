@@ -1632,7 +1632,6 @@
               <name>1|43</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">[ &quot;Prescribe Vaginal Progesterone&quot;, &quot;Perform Cervical Cerclage&quot; ]</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
