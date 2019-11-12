@@ -1571,6 +1571,7 @@
               <name>1|37</name>
               <type>GIVEN</type>
             </expressionIdentifier>
+            <rawValue class="string">160</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -1581,6 +1582,7 @@
               <name>1|38</name>
               <type>GIVEN</type>
             </expressionIdentifier>
+            <rawValue class="string">5</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
