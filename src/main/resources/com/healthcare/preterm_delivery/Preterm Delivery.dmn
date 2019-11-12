@@ -885,7 +885,9 @@ False</semantic:allowedAnswers>
     <dmndi:DMNDiagram>
       <di:extension>
         <drools:ComponentsWidthsExtension>
-          <drools:ComponentWidths dmnElementRef="_2d2ebab8-61f5-4865-8e7e-ece9dad2b6e1"/>
+          <drools:ComponentWidths dmnElementRef="_2d2ebab8-61f5-4865-8e7e-ece9dad2b6e1">
+            <drools:width>652.0</drools:width>
+          </drools:ComponentWidths>
           <drools:ComponentWidths dmnElementRef="_a2950fa1-9a3d-4107-b8cf-ffbff666b46d">
             <drools:width>50.0</drools:width>
             <drools:width>168.0</drools:width>
