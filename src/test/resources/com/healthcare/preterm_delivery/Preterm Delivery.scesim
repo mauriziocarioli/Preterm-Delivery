@@ -1247,6 +1247,7 @@
               <name>1|5</name>
               <type>GIVEN</type>
             </expressionIdentifier>
+            <rawValue class="string">34</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -1559,6 +1560,7 @@
               <name>1|36</name>
               <type>GIVEN</type>
             </expressionIdentifier>
+            <rawValue class="string">&quot;Singleton&quot;</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -1639,6 +1641,7 @@
               <name>1|44</name>
               <type>EXPECT</type>
             </expressionIdentifier>
+            <rawValue class="string">&quot;Give shot of Progesterone&quot;</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
