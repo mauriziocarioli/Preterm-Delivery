@@ -937,7 +937,9 @@ False</semantic:allowedAnswers>
             <drools:width>272.0</drools:width>
             <drools:width>149.0</drools:width>
           </drools:ComponentWidths>
-          <drools:ComponentWidths dmnElementRef="_4a126757-48bf-4176-bc02-f38cfc35f268"/>
+          <drools:ComponentWidths dmnElementRef="_4a126757-48bf-4176-bc02-f38cfc35f268">
+            <drools:width>436.0</drools:width>
+          </drools:ComponentWidths>
           <drools:ComponentWidths dmnElementRef="_7eaf8b1f-cd25-40b2-9b68-ee446f75805a">
             <drools:width>50.0</drools:width>
             <drools:width>201.0</drools:width>
