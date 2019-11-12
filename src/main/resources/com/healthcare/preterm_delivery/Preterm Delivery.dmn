@@ -527,7 +527,7 @@ False</semantic:allowedAnswers>
       </semantic:input>
       <semantic:input id="_0427de54-33f0-404e-bc7d-33e7fc3254f9">
         <semantic:inputExpression id="_66425BC7-2F7B-4851-86F2-3582E16D096B" typeRef="boolean">
-          <semantic:text>Determine Presence of Preterm Labor PTL</semantic:text>
+          <semantic:text>Determine Presence of Preterm Labor</semantic:text>
         </semantic:inputExpression>
       </semantic:input>
       <semantic:input id="_98a39de0-3036-4300-bd76-9fdb02f10224">
