@@ -895,10 +895,20 @@ False</semantic:allowedAnswers>
             <drools:width>272.0</drools:width>
             <drools:width>149.0</drools:width>
           </drools:ComponentWidths>
-          <drools:ComponentWidths dmnElementRef="_a317d0b8-b084-42a3-97ab-aa06e1c742a1"/>
-          <drools:ComponentWidths dmnElementRef="_57280967-6062-4a71-b442-c646dfd34dc5"/>
-          <drools:ComponentWidths dmnElementRef="_64904f79-6d59-41a9-8154-b62372d5f5b1"/>
-          <drools:ComponentWidths dmnElementRef="_bc0ea868-aa04-4795-97a6-a96b39777172"/>
+          <drools:ComponentWidths dmnElementRef="_a317d0b8-b084-42a3-97ab-aa06e1c742a1">
+            <drools:width>50.0</drools:width>
+            <drools:width>214.0</drools:width>
+            <drools:width>551.0</drools:width>
+          </drools:ComponentWidths>
+          <drools:ComponentWidths dmnElementRef="_57280967-6062-4a71-b442-c646dfd34dc5">
+            <drools:width>551.0</drools:width>
+          </drools:ComponentWidths>
+          <drools:ComponentWidths dmnElementRef="_64904f79-6d59-41a9-8154-b62372d5f5b1">
+            <drools:width>551.0</drools:width>
+          </drools:ComponentWidths>
+          <drools:ComponentWidths dmnElementRef="_bc0ea868-aa04-4795-97a6-a96b39777172">
+            <drools:width>551.0</drools:width>
+          </drools:ComponentWidths>
           <drools:ComponentWidths dmnElementRef="_06d64849-99b9-4759-9776-19da16acb7e8"/>
           <drools:ComponentWidths dmnElementRef="_9c87303c-ae25-4cc6-aade-d8caf1c9cef0"/>
           <drools:ComponentWidths dmnElementRef="literal__9c87303c-ae25-4cc6-aade-d8caf1c9cef0"/>
