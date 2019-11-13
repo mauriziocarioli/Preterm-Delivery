@@ -1,0 +1,157 @@
+= Preterm Delivery Decision with DMN
+
+POST decision model execution request:
+
+http://localhost:8080/kie-server/services/rest/server/containers/Preterm-Delivery_1.0.0-SNAPSHOT/dmn
+
+[source,JSON]
+----
+{
+    "model-namespace": "http://www.trisotech.com/definitions/_ad811181-0d1b-4213-b0d2-8f301b20d259",
+    "model-name": "Preterm Delivery",
+    "decision-name": [],
+    "decision-id": [],
+    "dmn-context": {
+        "Exam Data": {
+            "Gestational Age": 23
+        },
+        "Patient Complaints": [
+            "Backache",
+            "Pelvic Pressure"
+        ],
+        "Previous Pregnancies": [
+            {
+                "Weeks to Delivery": 30,
+                "OHP Shots Used": false
+            }
+        ],
+        "Past GYN History": {
+            "Uterine Malformation": false
+        },
+        "Social History": {
+            "Tobacco use": true
+        },
+        "Vital Signs Measurements": {
+            "Height": 5,
+            "Pre-Pregnancy Weight": 160,
+            "Type of Pregnancy": "Singleton",
+            "Cervical Length": 24
+        }
+    }
+}
+----
+
+Result:
+
+[source,JSON]
+----
+{
+  "type" : "SUCCESS",
+  "msg" : "OK from container 'Preterm-Delivery_1.0.0-SNAPSHOT'",
+  "result" : {
+    "dmn-evaluation-result" : {
+      "messages" : [ ],
+      "model-namespace" : "http://www.trisotech.com/definitions/_ad811181-0d1b-4213-b0d2-8f301b20d259",
+      "model-name" : "Preterm Delivery",
+      "decision-name" : [ ],
+      "dmn-context" : {
+        "Preterm Delivery History" : true,
+        "Previous Pregnancies" : [ {
+          "OHP Shots Used" : false,
+          "Weeks to Delivery" : 30
+        } ],
+        "Social History" : {
+          "Tobacco use" : true
+        },
+        "Prior Cervical Procedures" : false,
+        "Determine Presence of Preterm Labor" : true,
+        "Determine BMI Category" : "Obese",
+        "Prior OHP Shot Given" : false,
+        "Vital Signs Measurements" : {
+          "Type of Pregnancy" : "Singleton",
+          "Pre-Pregnancy Weight" : 160,
+          "Height" : 5,
+          "Cervical Length" : 24
+        },
+        "Determine English System Body Mass Index BMI" : "function Determine English System Body Mass Index BMI( Height, Weight )",
+        "Determine Actions for Short Cervix" : [ "Prescribe Vaginal Progesterone", "Perform Cervical Cerclage" ],
+        "Determine if Cervical length is Required" : true,
+        "Exam Data" : {
+          "Gestational Age" : 23
+        },
+        "PTD Risk Factor Index" : 2,
+        "Past GYN History" : {
+          "Uterine Malformation" : false
+        },
+        "Determine Actions to Prevent Preterm Delivery" : "Send to hospital for further evaluation",
+        "Patient Complaints" : [ "Backache", "Pelvic Pressure" ]
+      },
+      "decision-results" : {
+        "_d6f7c7e1-7040-4ac4-9b59-40828c544f1b" : {
+          "messages" : [ ],
+          "decision-id" : "_d6f7c7e1-7040-4ac4-9b59-40828c544f1b",
+          "decision-name" : "Prior OHP Shot Given",
+          "result" : false,
+          "status" : "SUCCEEDED"
+        },
+        "_622f1264-914b-4b0a-b1d4-615c245ab902" : {
+          "messages" : [ ],
+          "decision-id" : "_622f1264-914b-4b0a-b1d4-615c245ab902",
+          "decision-name" : "Prior Cervical Procedures",
+          "result" : false,
+          "status" : "SUCCEEDED"
+        },
+        "_42ef4eb1-c0f7-4809-bdf5-f262af3d2301" : {
+          "messages" : [ ],
+          "decision-id" : "_42ef4eb1-c0f7-4809-bdf5-f262af3d2301",
+          "decision-name" : "Determine Presence of Preterm Labor",
+          "result" : true,
+          "status" : "SUCCEEDED"
+        },
+        "_3a627bbf-87cd-46ef-abbf-2c7f6f32655e" : {
+          "messages" : [ ],
+          "decision-id" : "_3a627bbf-87cd-46ef-abbf-2c7f6f32655e",
+          "decision-name" : "Determine Actions for Short Cervix",
+          "result" : [ "Prescribe Vaginal Progesterone", "Perform Cervical Cerclage" ],
+          "status" : "SUCCEEDED"
+        },
+        "_c97e5398-f40a-4a5f-b2f8-e96793a39c64" : {
+          "messages" : [ ],
+          "decision-id" : "_c97e5398-f40a-4a5f-b2f8-e96793a39c64",
+          "decision-name" : "Determine BMI Category",
+          "result" : "Obese",
+          "status" : "SUCCEEDED"
+        },
+        "_83a3469b-f7ad-4557-bb37-1ce734460af2" : {
+          "messages" : [ ],
+          "decision-id" : "_83a3469b-f7ad-4557-bb37-1ce734460af2",
+          "decision-name" : "PTD Risk Factor Index",
+          "result" : 2,
+          "status" : "SUCCEEDED"
+        },
+        "_05159b60-200b-45ad-8d8a-49a29b1fe578" : {
+          "messages" : [ ],
+          "decision-id" : "_05159b60-200b-45ad-8d8a-49a29b1fe578",
+          "decision-name" : "Preterm Delivery History",
+          "result" : true,
+          "status" : "SUCCEEDED"
+        },
+        "_6fa03841-69c0-40b6-a597-20338418261d" : {
+          "messages" : [ ],
+          "decision-id" : "_6fa03841-69c0-40b6-a597-20338418261d",
+          "decision-name" : "Determine if Cervical length is Required",
+          "result" : true,
+          "status" : "SUCCEEDED"
+        },
+        "_096c830b-5523-4dd5-97c2-5700a3e5460e" : {
+          "messages" : [ ],
+          "decision-id" : "_096c830b-5523-4dd5-97c2-5700a3e5460e",
+          "decision-name" : "Determine Actions to Prevent Preterm Delivery",
+          "result" : "Send to hospital for further evaluation",
+          "status" : "SUCCEEDED"
+        }
+      }
+    }
+  }
+}
+----
