@@ -7,7 +7,8 @@
   <version>1.0.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
   <name>Preterm-Delivery</name>
-  <description></description>
+  <description>This Decision Model example was created for the Antenatal pilot use case of the BPM Health project at OMG.
+  Contributors: Steve Hasley, Steve White, Denis Gagne.</description>
   <properties>
     <version.org.kie>7.26.0.Final-redhat-00005</version.org.kie>
   </properties>
