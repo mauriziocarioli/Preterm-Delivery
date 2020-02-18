@@ -10,7 +10,10 @@
   <description>This Decision Model example was created for the Antenatal pilot use case of the BPM Health project at OMG.
   Contributors: Steve Hasley, Steve White, Denis Gagne.</description>
   <properties>
-    <version.org.kie>7.26.0.Final-redhat-00005</version.org.kie>
+    <!-- RHDM 7.5.0 -->
+    <!-- version.org.kie>7.26.0.Final-redhat-00005</version.org.kie -->
+    <!-- RHDM 7.6.0 -->
+    <version.org.kie>7.30.0.Final-redhat-00003</version.org.kie>
   </properties>
   <dependencies>
     <dependency>
